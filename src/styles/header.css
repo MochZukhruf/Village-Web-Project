@@ -1,0 +1,55 @@
+/* styles/header.css */
+
+.mx-96 {
+  margin-left: 24rem;
+  margin-right: 24rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(
+    --base-100
+  ); /* Assuming --base-100 is defined in your global CSS */
+  padding: 1rem;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.text-xl {
+  font-size: 1.25rem; /* Adjust the size as needed */
+}
+
+.flex-none {
+  display: flex;
+}
+
+.menu-horizontal {
+  display: flex;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.menu-horizontal > li {
+  margin: 0 0.5rem; /* Adjust the margin as needed */
+}
+
+.dropdown-header {
+  padding: 0.5rem;
+  background-color: white;
+  position: absolute;
+  z-index: 50;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
