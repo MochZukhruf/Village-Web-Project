@@ -12,8 +12,8 @@ function App() {
     <><Router>
 
     <div className="App">
-      <Navbar/>
       <Header/>
+      <Navbar/>
         <Hero/>
       <Routes>
       </Routes>

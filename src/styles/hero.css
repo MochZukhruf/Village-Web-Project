@@ -1,0 +1,31 @@
+/* carousel.css */
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  position: relative;
+}
+
+.hero-btn {
+  background-color: rgb(201, 201, 201);
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    /* Adjust styles for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    /* Further adjustments for even smaller screens */
+  }
+}
