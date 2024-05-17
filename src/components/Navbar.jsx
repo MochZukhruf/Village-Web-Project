@@ -26,9 +26,6 @@ export const Navbar = () => {
             <li>
               <a>Link1</a>
             </li>
-            <li>
-              <a>Link2</a>
-            </li>
           </ul>
         </div>
       </div>

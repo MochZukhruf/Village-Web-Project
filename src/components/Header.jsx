@@ -17,7 +17,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <div>
+    <div className="header">
       {!isMobile && ( // Header hanya ditampilkan jika bukan tampilan smartphone
         <div className="mx-96">
           <div className="navbar">

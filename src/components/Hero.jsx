@@ -63,10 +63,16 @@ export const Hero = () => {
         </div>
       </div>
       <div className="hero-btn">
-        <div className="join">
-          <button className="btn join-item">Button</button>
-          <button className="btn join-item">Button</button>
-          <button className="btn join-item">Button</button>
+        <div className="space-x-10">
+          <div className="join ">
+            <button className="btn join-item circle-btn">Button</button>
+          </div>
+          <div className="join">
+            <button className="btn join-item circle-btn">Button</button>
+          </div>
+          <div className="join">
+            <button className="btn join-item circle-btn">Button</button>
+          </div>
         </div>
       </div>
     </div>

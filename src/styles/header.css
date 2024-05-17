@@ -1,6 +1,5 @@
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.header {
+  background-color: darkgray;
 }
 
 .max-w-screen-lg {
@@ -12,7 +11,6 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--base-100);
-  padding: 1rem;
 }
 
 .flex-1 {
@@ -31,6 +29,7 @@
 
 .flex-none {
   display: flex;
+  height: fit-content;
 }
 
 .menu-horizontal {
