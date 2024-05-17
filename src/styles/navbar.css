@@ -1,68 +1,92 @@
-/* styles/header.css */
+/* styles/navbar.css */
 
 .mx-96 {
-    position: relative;
-    margin-left: 24rem;
-    margin-right: 24rem;
+  margin-left: 24rem;
+  margin-right: 24rem;
+}
+
+.navbar-container {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it is above other content */
+  background-color: var(
+    --base-100,
+    aliceblue
+  ); /* Ensure the background is set */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(
+    --base-100
+  ); /* Assuming --base-100 is defined in your global CSS */
+  padding: 1rem;
+  width: 100%; /* Ensure it covers the full width */
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.text-xl {
+  font-size: 1.25rem; /* Adjust the size as needed */
+}
+
+.flex-none {
+  display: flex;
+}
+
+.menu-horizontal {
+  display: flex;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.menu-horizontal > li {
+  margin: 0 0.5rem; /* Adjust the margin as needed */
+}
+
+.dropdown-header {
+  padding: 0.5rem;
+  background-color: white;
+  position: absolute;
+  z-index: 50;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    margin-left: 0;
+    margin-right: 0;
   }
-  
+
   .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(
-      --base-100
-    ); /* Assuming --base-100 is defined in your global CSS */
-    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
   .flex-1 {
-    flex: 1;
+    width: 100%;
+    margin-bottom: 1rem;
   }
-  
-  .btn-ghost {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .text-xl {
-    font-size: 1.25rem; /* Adjust the size as needed */
-  }
-  
-  .flex-none {
-    display: flex;
-  }
-  
+
   .menu-horizontal {
-    display: flex;
+    flex-direction: column;
   }
-  
-  .px-1 {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-  }
-  
+
   .menu-horizontal > li {
-    margin: 0 0.5rem; /* Adjust the margin as needed */
+    margin: 0.5rem 0;
   }
-  
-  .dropdown-header {
-    padding: 0.5rem;
-    background-color: white;
-    position: absolute;
-    z-index: 50;
-    border-radius: 0 0 0.25rem 0.25rem;
-  }
-  
-  @media (max-width: 768px) {
-      .carousel-item {
-        /* Adjust styles for smaller screens */
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .carousel-item {
-        /* Further adjustments for even smaller screens */
-      }
-    }
+}
