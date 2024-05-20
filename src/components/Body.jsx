@@ -3,37 +3,39 @@ import "../styles/body.css";
 
 export const Body = () => {
   return (
-    <div>
+    <div className="mx-96">
       <div className="content">
-        <div className="left-content">
-          <td>
-            <div className="recent-news">
-              <i>Terkini</i>
-            </div>
-            <tr>
-              <div className="recent-content">
-                <div className="card lg:card-side bg-base-100 shadow-xl">
-                  <figure className="card-figure">
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-                      alt="Album"
-                    />
-                  </figure>
-                  <div className="card-body">
-                    <h2 className="card-title">Today News</h2>
-                    <p>
-                      Click the button to read the newsdsodnajondjd
-                      sadjasduiashuodhsao sndosaiodasoidoiaso
-                    </p>
-                    <div className="card-actions justify-end">
-                      <p className="date-content">Date : 2024</p>
-                      <button className="btn btn-primary">Listen</button>
+        <div>
+          <div className="left-content">
+            <td>
+              <div className="recent-news">
+                <i>Terkini</i>
+              </div>
+              <tr>
+                <div className="recent-content">
+                  <div className="card lg:card-side bg-base-100 shadow-xl">
+                    <figure className="card-figure">
+                      <img
+                        src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
+                        alt="Album"
+                      />
+                    </figure>
+                    <div className="card-body">
+                      <h2 className="card-title">Today News</h2>
+                      <p>
+                        Click the button to read the newsdsodnajondjd
+                        sadjasduiashuodhsao sndosaiodasoidoiaso
+                      </p>
+                      <div className="card-actions justify-end">
+                        <p className="date-content">Date : 2024</p>
+                        <button className="btn btn-primary">Listen</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </tr>
-          </td>
+              </tr>
+            </td>
+          </div>
         </div>
         <div className="right-content">
           <div className="announcement">

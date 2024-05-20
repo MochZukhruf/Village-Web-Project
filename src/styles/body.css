@@ -24,7 +24,7 @@
 }
 
 .card {
-  width: 500px; /* Set the desired width */
+  width: 910px; /* Set the desired width */
   height: 250px; /* Set the desired height */
 }
 
@@ -38,4 +38,8 @@
 
 .announcement {
   margin-bottom: 20px;
+}
+
+.collapse {
+  width: 420px;
 }
