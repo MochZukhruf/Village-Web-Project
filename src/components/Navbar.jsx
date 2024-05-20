@@ -3,61 +3,57 @@ import "../styles/navbar.css";
 
 export const Navbar = () => {
   return (
-    <div>
-      <div className="header1">
-        <div className="navbar-container1">
-          <div className=" mx-96">
-            <div className="navbar">
-              <div className="flex-1">
-                <a className="btn-ghost text-xl">Village</a>
-              </div>
-              <div className="flex-none">
-                <ul className="menu menu-horizontal px-1">
-                  <li>
-                    <details>
-                      <summary>Parent</summary>
-                      <ul className="dropdown-header">
-                        <li>
-                          <a>Link 1</a>
-                        </li>
-                        <li>
-                          <a>Link 2</a>
-                        </li>
-                      </ul>
-                    </details>
-                  </li>
-                </ul>
-              </div>
-            </div>
+    <div className="navbar-container">
+      <div className=" mx-96">
+        <div className="navbar">
+          <div className="flex-1">
+            <a className="btn-ghost text-xl">Village</a>
           </div>
-        </div>
-      </div>
-      <div className="navbar-container">
-        <div className=" mx-96">
-          <div className="navbar">
-            <div className="flex-1">
-              <a className="btn-ghost text-xl">Village</a>
-            </div>
-            <div className="flex-none">
-              <ul className="menu menu-horizontal px-1">
-                <li>
-                  <details>
-                    <summary>Parent</summary>
-                    <ul className="dropdown-header">
-                      <li>
-                        <a>Link 1</a>
-                      </li>
-                      <li>
-                        <a>Link 2</a>
-                      </li>
-                    </ul>
-                  </details>
-                </li>
-                <li>
-                  <a>Link1</a>
-                </li>
-              </ul>
-            </div>
+          <div className="flex-none">
+            <ul className="menu menu-horizontal px-1">
+              <li>
+                <details>
+                  <summary>Parent</summary>
+                  <ul className="dropdown-header">
+                    <li>
+                      <a>Link 1</a>
+                    </li>
+                    <li>
+                      <a>Link 2</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Parent</summary>
+                  <ul className="dropdown-header">
+                    <li>
+                      <a>Link 1</a>
+                    </li>
+                    <li>
+                      <a>Link 2</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Parent</summary>
+                  <ul className="dropdown-header">
+                    <li>
+                      <a>Link 1</a>
+                    </li>
+                    <li>
+                      <a>Link 2</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <a>Link1</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
