@@ -10,6 +10,7 @@ import { Media } from './components/Media';
 
 
 
+
 function App() {
   return (
     <><Router>
@@ -19,7 +20,7 @@ function App() {
       <Navbar/>
         <Hero/>
         <Body/>
-        <Media/>
+        <Media/> 
       <Routes>
       </Routes>
       <Footer/>

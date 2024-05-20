@@ -1,4 +1,8 @@
 /* carousel.css */
+.carousel {
+  border-radius: 10px;
+  max-width: 100%;
+}
 .carousel-item {
   position: absolute;
   top: 0;
@@ -14,8 +18,13 @@
 }
 
 .hero-btn {
-  background-color: rgb(201, 201, 201);
+  background-color: rgb(255, 255, 255);
   padding: 30px;
+}
+
+.btn-arrow {
+  border-radius: 50%;
+  background-color: rgba(204, 204, 204, 0.39);
 }
 
 .btn {

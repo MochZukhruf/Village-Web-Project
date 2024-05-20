@@ -13,7 +13,7 @@ export const Navbar = () => {
             <ul className="menu menu-horizontal px-1">
               <li>
                 <details>
-                  <summary>Parent</summary>
+                  <summary>Profile</summary>
                   <ul className="dropdown-header">
                     <li>
                       <a>Link 1</a>
@@ -26,7 +26,7 @@ export const Navbar = () => {
               </li>
               <li>
                 <details>
-                  <summary>Parent</summary>
+                  <summary>Goverment</summary>
                   <ul className="dropdown-header">
                     <li>
                       <a>Link 1</a>
@@ -39,7 +39,7 @@ export const Navbar = () => {
               </li>
               <li>
                 <details>
-                  <summary>Parent</summary>
+                  <summary>Public Information</summary>
                   <ul className="dropdown-header">
                     <li>
                       <a>Link 1</a>
@@ -51,7 +51,7 @@ export const Navbar = () => {
                 </details>
               </li>
               <li>
-                <a>Link1</a>
+                <a>About</a>
               </li>
             </ul>
           </div>

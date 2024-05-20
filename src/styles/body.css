@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: flex-start;
   box-sizing: border-box;
+  padding-top: 5%;
 }
 
 .right-content {
@@ -20,11 +21,12 @@
 }
 
 .card-body {
-  overflow-y: auto; /* Allow vertical scrolling if content overflows */
+  overflow-y: auto;
+  width: 100%;
 }
 
 .card {
-  width: 910px; /* Set the desired width */
+  width: 100%; /* Set the desired width */
   height: 250px; /* Set the desired height */
 }
 
@@ -42,4 +44,11 @@
 
 .collapse {
   width: 420px;
+}
+
+.btn-box {
+  border-radius: 10px;
+  width: 15%;
+  height: 150%;
+  background-color: rgb(129, 129, 129);
 }

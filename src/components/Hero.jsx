@@ -45,7 +45,7 @@ export const Hero = () => {
         </div>
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
           <button
-            className="btn btn-circle"
+            className="btn-arrow btn-circle"
             onClick={() =>
               setCurrentSlide(
                 currentSlide === 1 ? totalSlides : currentSlide - 1
@@ -55,7 +55,7 @@ export const Hero = () => {
             ❮
           </button>
           <button
-            className="btn btn-circle"
+            className="btn-arrow btn-circle"
             onClick={() => setCurrentSlide((currentSlide % totalSlides) + 1)}
           >
             ❯
@@ -68,16 +68,6 @@ export const Hero = () => {
             <button className="btn join-item circle-btn">Button</button>
           </div>
           <div className="join">
-            <button className="btn join-item circle-btn">Button</button>
-          </div>
-          <div className="join">
-            <button className="btn join-item circle-btn">Button</button>
-          </div>
-        </div>
-      </div>
-      <div className="hero-btn">
-        <div className="space-x-10">
-          <div className="join ">
             <button className="btn join-item circle-btn">Button</button>
           </div>
           <div className="join">

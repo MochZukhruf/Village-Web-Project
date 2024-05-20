@@ -3,13 +3,13 @@ import "../styles/body.css";
 
 export const Body = () => {
   return (
-    <div className="mx-96">
+    <div className="px-96">
       <div className="content">
         <div>
           <div className="left-content">
             <td>
               <div className="recent-news">
-                <i>Terkini</i>
+                <i>Recent</i>
               </div>
               <tr>
                 <div className="recent-content">
@@ -23,8 +23,8 @@ export const Body = () => {
                     <div className="card-body">
                       <h2 className="card-title">Today News</h2>
                       <p>
-                        Click the button to read the newsdsodnajondjd
-                        sadjasduiashuodhsao sndosaiodasoidoiaso
+                        Click the button to read the news for today and maybe
+                        you gonna find something new
                       </p>
                       <div className="card-actions justify-end">
                         <p className="date-content">Date : 2024</p>

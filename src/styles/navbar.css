@@ -1,5 +1,3 @@
-/* styles/navbar.css */
-
 .mx-96 {
   margin-left: 24rem;
   margin-right: 24rem;
@@ -12,7 +10,7 @@
   z-index: 1000; /* Ensure it is above other content */
   background-color: var(
     --base-100,
-    aliceblue
+    rgb(235, 235, 235)
   ); /* Ensure the background is set */
 }
 
@@ -32,8 +30,11 @@
 }
 
 .btn-ghost {
-  background-color: transparent;
-  border: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -55,15 +56,42 @@
 }
 
 .menu-horizontal > li {
+  position: relative; /* Needed for positioning the dropdown */
   margin: 0 0.5rem; /* Adjust the margin as needed */
+}
+
+/* Dropdown menu hidden by default */
+.menu-horizontal > li > details > ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  z-index: 50;
+  min-width: 200px;
+  padding: 0.5rem 0;
+}
+
+/* Show the dropdown menu on hover */
+.menu-horizontal > li:hover > details > ul {
+  display: block;
 }
 
 .dropdown-header {
   padding: 0.5rem;
-  background-color: white;
-  position: absolute;
-  z-index: 50;
-  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.dropdown-header > li > a {
+  padding: 0.5rem 1rem;
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-header > li > a:hover {
+  background-color: #f0f0f0;
 }
 
 @media (max-width: 768px) {
@@ -88,5 +116,9 @@
 
   .menu-horizontal > li {
     margin: 0.5rem 0;
+  }
+
+  .menu-horizontal > li > details > ul {
+    position: static;
   }
 }
