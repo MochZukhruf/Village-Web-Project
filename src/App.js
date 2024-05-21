@@ -1,16 +1,11 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as  Router, Routes, Route } from 'react-router-dom';
-
-import { Hero } from './components/Hero';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
-import { Body } from './components/Body';
-import { Media } from './components/Media';
-import { BtnBody } from './components/BtnBody';
-import { BodyFooter } from './components/BodyFooter';
-
-
+import { Home } from './components/Home';
+import { History } from './components/pages/profile/History';
+import { Aboutus } from './components/pages/profile/Aboutus';
 
 
 function App() {
@@ -20,12 +15,12 @@ function App() {
     <div className="App">
       
       <Navbar/>
-        <Hero/>
-        <BtnBody/>
-        <Body/>
-        <Media/>
-        <BodyFooter/>
+        
       <Routes>
+        <Route path = "/" element={<Home/>}/>
+        <Route path='/history' element={<History/>}/>
+        <Route path='/about' element={<Aboutus/>}/>
+        
       </Routes>
       <Footer/>
     </div>

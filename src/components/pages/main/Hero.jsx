@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../styles/hero.css"; // Import the CSS file
+import "../../../styles/hero.css"; // Import the CSS file
 
 export const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
