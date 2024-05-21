@@ -1,0 +1,27 @@
+.home-icon {
+  width: 1rem;
+}
+
+.breadcrumbs {
+  background-color: rgb(230, 230, 230);
+  margin-top: 1%;
+  border-radius: 1vh;
+}
+
+.img-icon {
+  margin-left: 1vh;
+}
+
+.content-about {
+  text-align: left;
+}
+
+.header-content {
+  margin-top: 1vh;
+  font-size: 3vh;
+  margin-bottom: 1vh;
+}
+
+.content-fill {
+  margin-bottom: 2vh;
+}
