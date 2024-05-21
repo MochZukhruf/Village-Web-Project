@@ -1,9 +1,11 @@
-/* carousel.css */
 .carousel {
   border-radius: 10px;
-  max-width: 100%;
+  height: 100%;
 }
+
 .carousel-item {
+  width: auto;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -12,14 +14,35 @@
   transition: opacity 1s ease-in-out;
 }
 
+.carousel-item img {
+  width: 100%;
+  height: 100%; /* Mengisi seluruh lebar dan tinggi carousel item */
+  object-fit: cover; /* Memastikan gambar dipertahankan proporsional dan terisi penuh */
+}
+
+.btn-background-all {
+  background-color: rgb(236, 236, 236);
+}
+
 .carousel-item.active {
   opacity: 1;
   position: relative;
 }
 
 .hero-btn {
-  background-color: rgb(255, 255, 255);
   padding: 30px;
+}
+
+.btn-body {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* This allows the buttons to wrap to the next line if needed */
+}
+
+.join {
+  display: flex;
+  flex-direction: column; /* Stack the button and text vertically */
+  align-items: center; /* Center the button and text horizontally */
 }
 
 .btn-arrow {
@@ -27,17 +50,16 @@
   background-color: rgba(204, 204, 204, 0.39);
 }
 
-.btn {
-  border-radius: 10%;
-}
 /* Make the buttons circular */
 .circle-btn {
   width: 100px; /* Adjust size as needed */
   height: 100px; /* Adjust size as needed */
   border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.219);
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px; /* Add margin to create space between buttons */
 }
 
 @media (max-width: 768px) {
@@ -49,5 +71,17 @@
 @media (max-width: 480px) {
   .carousel-item {
     /* Further adjustments for even smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    /* Atur ulang untuk tampilan layar yang lebih kecil jika diperlukan */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    /* Lebih lanjut atur ulang untuk tampilan layar yang lebih kecil */
   }
 }

@@ -7,6 +7,8 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Body } from './components/Body';
 import { Media } from './components/Media';
+import { BtnBody } from './components/BtnBody';
+import { BodyFooter } from './components/BodyFooter';
 
 
 
@@ -19,8 +21,10 @@ function App() {
       
       <Navbar/>
         <Hero/>
+        <BtnBody/>
         <Body/>
-        <Media/> 
+        <Media/>
+        <BodyFooter/>
       <Routes>
       </Routes>
       <Footer/>

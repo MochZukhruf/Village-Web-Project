@@ -49,10 +49,10 @@ export const Body = () => {
                   htmlFor="accordion-1"
                   className="collapse-title text-xl font-medium"
                 >
-                  Click to open this one and close others
+                  Day 1 : Regret
                 </label>
                 <div className="collapse-content">
-                  <p>hello</p>
+                  <p>Regereting all of the things</p>
                 </div>
               </div>
             </tr>
