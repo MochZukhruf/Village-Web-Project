@@ -105,7 +105,7 @@ export const Navbar = () => {
             <ul className="menu menu-horizontal px-1">
               <li>
                 <details onClick={() => handleDropdownClick(0)}>
-                  <summary>Profil</summary>
+                  <summary className="dropdown-title">Profil</summary>
                   <ul className="dropdown-header">
                     <li>
                       <Link to="/about" onClick={handleLinkClick}>
@@ -114,7 +114,7 @@ export const Navbar = () => {
                     </li>
                     <li>
                       <Link to="/history" onClick={handleLinkClick}>
-                        Sejarah
+                        Sejarah Desa
                       </Link>
                     </li>
                     <li>
@@ -137,7 +137,7 @@ export const Navbar = () => {
               </li>
               <li>
                 <details onClick={() => handleDropdownClick(1)}>
-                  <summary>Goverment</summary>
+                  <summary className="dropdown-title">Goverment</summary>
                   <ul className="dropdown-header">
                     <li>
                       <a>Link 1</a>
@@ -150,7 +150,9 @@ export const Navbar = () => {
               </li>
               <li>
                 <details onClick={() => handleDropdownClick(2)}>
-                  <summary>Public Information</summary>
+                  <summary className="dropdown-title">
+                    Public Information
+                  </summary>
                   <ul className="dropdown-header">
                     <li>
                       <a>Link 1</a>
@@ -162,7 +164,7 @@ export const Navbar = () => {
                 </details>
               </li>
               <li>
-                <a>More</a>
+                <a className="dropdown-title">More</a>
               </li>
             </ul>
           </div>

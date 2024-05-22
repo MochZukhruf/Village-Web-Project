@@ -43,10 +43,11 @@
 .btn-ghost {
   padding: 0.5rem 0.5rem;
   display: flex;
-  color: #333;
+  color: #535353;
   text-decoration: none;
   border-radius: 10px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .text-xl {
@@ -87,6 +88,11 @@
 
 .menu-horizontal > li > details[open] > ul {
   display: block; /* Show when open */
+}
+
+.dropdown-title {
+  font-weight: bold;
+  color: #535353;
 }
 
 .dropdown-header > li > a {

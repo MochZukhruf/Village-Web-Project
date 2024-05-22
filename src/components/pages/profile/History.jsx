@@ -19,7 +19,7 @@ export const History = () => {
             </div>
           </li>
           <li>
-            <Link to="/history">History</Link>
+            <Link to="/history">Sejarah Desa</Link>
           </li>
         </ul>
       </div>

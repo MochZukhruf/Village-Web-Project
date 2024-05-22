@@ -19,7 +19,7 @@ export const Aboutus = () => {
             </div>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about">Tentang Kami</Link>
           </li>
         </ul>
       </div>
