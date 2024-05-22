@@ -67,3 +67,18 @@ ul.custom-bullets {
 .content-vision {
   text-align: justify;
 }
+.content-geography {
+  text-align: justify;
+  margin-bottom: 5vh;
+}
+
+.br-geo {
+  margin-bottom: 10%;
+}
+.br-demo {
+  margin-bottom: 35%;
+}
+
+.content-demography {
+  text-align: justify;
+}
