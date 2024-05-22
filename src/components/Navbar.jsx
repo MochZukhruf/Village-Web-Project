@@ -54,13 +54,22 @@ export const Navbar = () => {
             <ul className="menu menu-horizontal px-1">
               <li>
                 <details>
-                  <summary>Profile</summary>
+                  <summary>Profil</summary>
                   <ul className="dropdown-header">
                     <li>
-                      <Link to="/about">About</Link>
+                      <Link to="/about">Tentang Kami</Link>
                     </li>
                     <li>
-                      <Link to="/history">History</Link>
+                      <Link to="/history">Sejarah</Link>
+                    </li>
+                    <li>
+                      <Link to="/vision">Visi dan Misi</Link>
+                    </li>
+                    <li>
+                      <Link to="/geography">Geografis Desa</Link>
+                    </li>
+                    <li>
+                      <Link to="/demography ">Demografi Desa</Link>
                     </li>
                   </ul>
                 </details>

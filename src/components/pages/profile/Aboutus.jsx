@@ -19,7 +19,7 @@ export const Aboutus = () => {
             </div>
           </li>
           <li>
-            <a>About</a>
+            <Link to="/about">About</Link>
           </li>
         </ul>
       </div>
@@ -127,6 +127,87 @@ export const Aboutus = () => {
             </tbody>
           </table>
         </div>
+        <div className="content-sub-title">
+          <table>
+            <tbody>
+              <tr>
+                <td className="number-content align-top">3.</td>
+                <td>
+                  <strong>Berita dan Kegiatan</strong>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <ul className="custom-bullets">
+                    <li>Berita Terbaru</li>
+                    <li>Agenda Kegiatan Desa</li>
+                    <li>Dokumentasi Acara</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div className="content-sub-title">
+          <table>
+            <tbody>
+              <tr>
+                <td className="number-content align-top">4.</td>
+                <td>
+                  <strong>Data dan Statistik</strong>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <ul className="custom-bullets">
+                    <li>Data Kependudukan</li>
+                    <li>Data Pertanian dan Ekonomi</li>
+                    <li>Statistik Kesejahteraan</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div className="content-sub-title">
+          <table>
+            <tbody>
+              <tr>
+                <td className="number-content align-top">5.</td>
+                <td>
+                  <strong>Galeri</strong>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <ul className="custom-bullets">
+                    <li>Foto dan Video Kegiatan Desa</li>
+                    <li>Potensi Wisata dan Budaya</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div className="content-title">Tentang Kami</div>
+        <div className="content-fill">
+          <p>
+            Selamat datang di situs resmi Desa Kotanagaya, Kecamatan Bolano
+            Lambunu, Kabupaten Parigi Moutong, Sulawesi Tengah. Website ini
+            dibuat untuk memberikan informasi yang lengkap dan akurat mengenai
+            Desa Kotanagaya kepada masyarakat, baik yang berada di dalam maupun
+            di luar desa.
+          </p>
+        </div>
+      </div>
+      <div className="footer-about">
+        <i>
+          Terima kasih telah mengunjungi website Desa Kotanagaya. Bersama kita
+          wujudkan desa yang maju dan sejahtera!
+        </i>
       </div>
     </div>
   );

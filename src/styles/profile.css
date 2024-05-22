@@ -6,6 +6,7 @@
   background-color: rgb(230, 230, 230);
   margin-top: 1%;
   border-radius: 1vh;
+  margin-bottom: 1%;
 }
 
 .img-icon {
@@ -13,7 +14,7 @@
 }
 
 .content-about {
-  text-align: left;
+  text-align: justify;
 }
 
 .header-content {
@@ -50,4 +51,19 @@ ul {
 ul.custom-bullets {
   margin-left: 2vh;
   list-style-type: disc; /* contoh custom style */
+}
+
+.footer-about {
+  font-size: 2vh;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+
+.content-history {
+  text-align: justify;
+}
+
+.content-vision {
+  text-align: justify;
 }

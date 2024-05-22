@@ -1,8 +1,3 @@
-.mx-96 {
-  margin-left: 24rem;
-  margin-right: 24rem;
-}
-
 .navbar-container {
   position: -webkit-sticky; /* For Safari */
   position: sticky;
@@ -40,7 +35,7 @@
   background-color: var(
     --base-100
   ); /* Assuming --base-100 is defined in your global CSS */
-  padding: 1rem;
+
   width: 100%; /* Ensure it covers the full width */
 }
 
@@ -49,7 +44,7 @@
 }
 
 .btn-ghost {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   display: flex;
 
   color: #333;

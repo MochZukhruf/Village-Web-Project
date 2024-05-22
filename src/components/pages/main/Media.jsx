@@ -18,6 +18,16 @@ export const Media = () => {
                       <td>Link 2</td>
                       <td>Link 3</td>
                     </tr>
+                    <tr>
+                      <td>Link 1</td>
+                      <td>Link 2</td>
+                      <td>Link 3</td>
+                    </tr>
+                    <tr>
+                      <td>Link 1</td>
+                      <td>Link 2</td>
+                      <td>Link 3</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
