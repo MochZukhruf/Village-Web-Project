@@ -1,13 +1,14 @@
 .navbar-container {
-  position: -webkit-sticky; /* For Safari */
-  position: sticky;
+  position: sticky; /* For sticky positioning */
   transition: background-color 0.3s ease;
   top: 0;
   z-index: 1000; /* Ensure it is above other content */
-  background-color: var(
-    --base-100,
-    rgb(235, 235, 235)
-  ); /* Ensure the background is set */
+  background-color: rgba(
+    235,
+    235,
+    235,
+    0.644
+  ); /* Initial transparent background */
 }
 
 .div-img-logo {
@@ -20,22 +21,18 @@
 }
 
 .navbar-container.transparent {
-  background-color: rgba(
-    235,
-    235,
-    235,
-    0.9
-  ); /* Warna latar belakang transparan */
+  background-color: rgba(235, 235, 235, 0.644); /* Transparent background */
+}
+
+.navbar-container.solid {
+  background-color: rgb(235, 235, 235); /* Solid background */
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(
-    --base-100
-  ); /* Assuming --base-100 is defined in your global CSS */
-
+  background-color: transparent; /* Keep the navbar itself transparent */
   width: 100%; /* Ensure it covers the full width */
 }
 
@@ -46,7 +43,6 @@
 .btn-ghost {
   padding: 0.5rem 0.5rem;
   display: flex;
-
   color: #333;
   text-decoration: none;
   border-radius: 10px;
@@ -75,33 +71,39 @@
   margin: 0 0.5rem; /* Adjust the margin as needed */
 }
 
-/* Dropdown menu hidden by default */
 .menu-horizontal > li > details > ul {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: white;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc67;
   border-radius: 0.25rem;
   z-index: 50;
   min-width: 200px;
   padding: 0.5rem 0;
+  display: none; /* Hide by default */
 }
 
-/* Show the dropdown menu on hover */
-.menu-horizontal > li:hover > details > ul {
-  display: block;
+.menu-horizontal > li > details[open] > ul {
+  display: block; /* Show when open */
 }
 
 .dropdown-header > li > a {
   padding: 0.5rem 1rem;
   display: block;
-  color: #333;
+  color: #575757;
   text-decoration: none;
 }
 
 .dropdown-header > li > a:hover {
-  background-color: #f0f0f0;
+  background-color: #a1a1a1;
+  color: white; /* Change text color on hover */
+  align-items: center;
+}
+
+.dropdown-header > li {
+  padding-left: 1vh;
 }
 
 @media (max-width: 768px) {
@@ -130,6 +132,7 @@
 
   .menu-horizontal > li > details > ul {
     position: static;
+    transform: none;
   }
 }
 

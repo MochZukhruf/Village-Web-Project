@@ -1,23 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../styles/navbar.css";
 
 export const Navbar = () => {
   const [scrollY, setScrollY] = useState(0);
   const [isTransparent, setIsTransparent] = useState(true);
+  const [openDropdown, setOpenDropdown] = useState(null);
   const location = useLocation();
+  const navbarRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-
-      if (currentScrollY > scrollY) {
-        setIsTransparent(true); // Scroll down
-      } else {
-        setIsTransparent(true); // Scroll up
-      }
-
       setScrollY(currentScrollY);
+
+      if (currentScrollY > 0) {
+        setIsTransparent(false); // Scroll down
+      } else {
+        setIsTransparent(true); // Scroll up or at the top
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -25,31 +26,63 @@ export const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrollY]);
+  }, []);
 
   useEffect(() => {
-    if (scrollY > 0 && isTransparent) {
-      setIsTransparent(true);
-    } else if (scrollY === 0 && !isTransparent) {
-      setIsTransparent(true);
-    }
-  }, [scrollY, isTransparent]);
+    const handleClickOutside = (event) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        document.querySelectorAll("details").forEach((details) => {
+          details.removeAttribute("open");
+        });
+        setOpenDropdown(null);
+      }
+    };
 
-  // Close the dropdown when navigating to a different route
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   useEffect(() => {
     document.querySelectorAll("details").forEach((details) => {
       details.removeAttribute("open");
     });
+    setOpenDropdown(null);
   }, [location]);
 
   const handleLinkClick = () => {
     document.querySelectorAll("details").forEach((details) => {
       details.removeAttribute("open");
     });
+    setOpenDropdown(null);
+  };
+
+  const handleDropdownClick = (index) => {
+    const detailsElements = document.querySelectorAll("details");
+
+    detailsElements.forEach((details, idx) => {
+      if (idx !== index) {
+        details.removeAttribute("open");
+      }
+    });
+
+    setOpenDropdown(openDropdown === index ? null : index);
+  };
+
+  const handleNavbarClick = () => {
+    document.querySelectorAll("details").forEach((details) => {
+      details.removeAttribute("open");
+    });
+    setOpenDropdown(null);
   };
 
   return (
-    <div className={`navbar-container ${isTransparent ? "transparent" : ""}`}>
+    <div
+      ref={navbarRef}
+      className={`navbar-container ${isTransparent ? "transparent" : "solid"}`}
+      onClick={handleNavbarClick}
+    >
       <div className="mx-96">
         <div className="navbar">
           <div className="flex-1">
@@ -71,7 +104,7 @@ export const Navbar = () => {
           <div className="flex-none">
             <ul className="menu menu-horizontal px-1">
               <li>
-                <details>
+                <details onClick={() => handleDropdownClick(0)}>
                   <summary>Profil</summary>
                   <ul className="dropdown-header">
                     <li>
@@ -103,7 +136,7 @@ export const Navbar = () => {
                 </details>
               </li>
               <li>
-                <details>
+                <details onClick={() => handleDropdownClick(1)}>
                   <summary>Goverment</summary>
                   <ul className="dropdown-header">
                     <li>
@@ -116,7 +149,7 @@ export const Navbar = () => {
                 </details>
               </li>
               <li>
-                <details>
+                <details onClick={() => handleDropdownClick(2)}>
                   <summary>Public Information</summary>
                   <ul className="dropdown-header">
                     <li>
