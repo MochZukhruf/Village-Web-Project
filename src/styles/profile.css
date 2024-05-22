@@ -19,7 +19,7 @@
 
 .header-content {
   margin-top: 1vh;
-  font-size: 3vh;
+  font-size: 2.5vh;
   margin-bottom: 1vh;
   font-weight: bold;
 }
@@ -76,9 +76,10 @@ ul.custom-bullets {
   margin-bottom: 10%;
 }
 .br-demo {
-  margin-bottom: 35%;
+  margin-bottom: 30%;
 }
 
 .content-demography {
   text-align: justify;
+  margin-bottom: 5vh;
 }

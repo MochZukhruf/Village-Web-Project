@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../styles/navbar.css";
 
 export const Navbar = () => {
   const [scrollY, setScrollY] = useState(0);
   const [isTransparent, setIsTransparent] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > scrollY) {
-        setIsTransparent(true); // Scroll ke bawah, navbar tidak transparan
+        setIsTransparent(true); // Scroll down
       } else {
-        setIsTransparent(true); // Scroll ke atas, navbar transparan
+        setIsTransparent(true); // Scroll up
       }
 
       setScrollY(currentScrollY);
@@ -34,15 +35,32 @@ export const Navbar = () => {
     }
   }, [scrollY, isTransparent]);
 
+  // Close the dropdown when navigating to a different route
+  useEffect(() => {
+    document.querySelectorAll("details").forEach((details) => {
+      details.removeAttribute("open");
+    });
+  }, [location]);
+
+  const handleLinkClick = () => {
+    document.querySelectorAll("details").forEach((details) => {
+      details.removeAttribute("open");
+    });
+  };
+
   return (
     <div className={`navbar-container ${isTransparent ? "transparent" : ""}`}>
-      <div className=" mx-96">
+      <div className="mx-96">
         <div className="navbar">
           <div className="flex-1">
-            <Link to="/" className="btn-ghost text-xl">
+            <Link
+              to="/"
+              className="btn-ghost text-xl"
+              onClick={handleLinkClick}
+            >
               <div className="div-img-logo">
                 <img
-                  src="/img/logo/logo-kabupaten.png" //logo desa
+                  src="/img/logo/logo-kabupaten.png"
                   alt="logo.png"
                   className="logo-img"
                 />
@@ -57,19 +75,29 @@ export const Navbar = () => {
                   <summary>Profil</summary>
                   <ul className="dropdown-header">
                     <li>
-                      <Link to="/about">Tentang Kami</Link>
+                      <Link to="/about" onClick={handleLinkClick}>
+                        Tentang Kami
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/history">Sejarah</Link>
+                      <Link to="/history" onClick={handleLinkClick}>
+                        Sejarah
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/vision">Visi dan Misi</Link>
+                      <Link to="/vision" onClick={handleLinkClick}>
+                        Visi dan Misi
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/geography">Geografis Desa</Link>
+                      <Link to="/geography" onClick={handleLinkClick}>
+                        Geografis Desa
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/demography ">Demografi Desa</Link>
+                      <Link to="/demography" onClick={handleLinkClick}>
+                        Demografi Desa
+                      </Link>
                     </li>
                   </ul>
                 </details>
