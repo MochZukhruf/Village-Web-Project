@@ -20,8 +20,34 @@
   margin-top: 1vh;
   font-size: 3vh;
   margin-bottom: 1vh;
+  font-weight: bold;
+}
+.content-title {
+  margin-top: 1vh;
+  font-size: 2vh;
+  margin-bottom: 1vh;
+  font-weight: bold;
 }
 
 .content-fill {
   margin-bottom: 2vh;
+  text-align: start;
+}
+
+.fill-head {
+  margin-bottom: 1vh;
+}
+
+.content-sub-title {
+  text-align: left;
+  margin-top: 1vh;
+}
+
+ul {
+  list-style-type: disc; /* tipe bullets, bisa diubah menjadi circle, square, dll */
+}
+
+ul.custom-bullets {
+  margin-left: 2vh;
+  list-style-type: disc; /* contoh custom style */
 }
