@@ -40,7 +40,14 @@ export const Navbar = () => {
         <div className="navbar">
           <div className="flex-1">
             <Link to="/" className="btn-ghost text-xl">
-              Village
+              <div className="div-img-logo">
+                <img
+                  src="/img/logo/logo-kabupaten.png" //logo desa
+                  alt="logo.png"
+                  className="logo-img"
+                />
+              </div>
+              Desa Kotanagaya
             </Link>
           </div>
           <div className="flex-none">

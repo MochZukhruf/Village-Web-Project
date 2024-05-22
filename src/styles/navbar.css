@@ -15,6 +15,15 @@
   ); /* Ensure the background is set */
 }
 
+.div-img-logo {
+  padding-right: 1vh;
+}
+
+.logo-img {
+  height: auto;
+  width: 3vh;
+}
+
 .navbar-container.transparent {
   background-color: rgba(
     235,
@@ -41,7 +50,8 @@
 
 .btn-ghost {
   padding: 0.5rem 1rem;
-  display: block;
+  display: flex;
+
   color: #333;
   text-decoration: none;
   border-radius: 10px;

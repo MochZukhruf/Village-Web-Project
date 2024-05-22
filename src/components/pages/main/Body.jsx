@@ -55,6 +55,30 @@ export const Body = () => {
                   <p>Regereting all of the things</p>
                 </div>
               </div>
+              <div className="collapse collapse-arrow bg-base-200">
+                <input type="checkbox" id="accordion-2" className="hidden" />
+                <label
+                  htmlFor="accordion-2"
+                  className="collapse-title text-xl font-medium"
+                >
+                  Day 2 : Realize
+                </label>
+                <div className="collapse-content">
+                  <p>Realizing all of the things</p>
+                </div>
+              </div>
+              <div className="collapse collapse-arrow bg-base-200">
+                <input type="checkbox" id="accordion-3" className="hidden" />
+                <label
+                  htmlFor="accordion-3"
+                  className="collapse-title text-xl font-medium"
+                >
+                  Day 3 : Insanity
+                </label>
+                <div className="collapse-content">
+                  <p>Insanity of all of the things</p>
+                </div>
+              </div>
             </tr>
           </td>
           <div></div>
