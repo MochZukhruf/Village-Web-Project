@@ -137,10 +137,12 @@ export const Navbar = () => {
               </li>
               <li>
                 <details onClick={() => handleDropdownClick(1)}>
-                  <summary className="dropdown-title">Goverment</summary>
+                  <summary className="dropdown-title">Pemerintahan</summary>
                   <ul className="dropdown-header">
                     <li>
-                      <a>Link 1</a>
+                      <Link to="/structure" onClick={handleLinkClick}>
+                        Struktur Organisasi
+                      </Link>
                     </li>
                     <li>
                       <a>Link 2</a>

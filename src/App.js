@@ -9,6 +9,7 @@ import { Aboutus } from './components/pages/profile/Aboutus';
 import { Vision } from './components/pages/profile/Vision';
 import { Geography } from './components/pages/profile/Geography';
 import { Demography } from './components/pages/profile/Demography';
+import { Structure } from './components/pages/goverment/Structure';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path='/vision' element={<Vision/>}/>
         <Route path='/geography' element={<Geography/>}/>
         <Route path='/demography' element={<Demography/>}/>
+        <Route path='/structure' element={<Structure/>}/>
       </Routes>
       <Footer/>
     </div>

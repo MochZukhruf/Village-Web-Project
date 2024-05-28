@@ -1,0 +1,29 @@
+.structure-content {
+  display: flex;
+}
+
+.structure-content-left {
+  padding-right: 1vh;
+  text-align: left;
+  flex-direction: column;
+}
+
+.btn-left {
+  display: flex;
+  align-items: flex-start;
+}
+
+.btn-fill-left {
+  display: flex;
+  padding-top: 0.75vh;
+  width: 100%;
+}
+.btn-fill-left span {
+  padding-right: 1vh;
+}
+
+.structure-content-right {
+  padding-left: 1vh;
+  text-align: left;
+  flex-direction: column;
+}
