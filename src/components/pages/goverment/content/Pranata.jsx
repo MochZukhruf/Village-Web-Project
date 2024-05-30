@@ -18,7 +18,9 @@ export const Pranata = () => {
             </div>
           </li>
           <li>
-            <Link className="link-next" to="/structure">Struktur Organisasi &nbsp;</Link>
+            <Link className="link-next" to="/structure">
+              Struktur Organisasi &nbsp;
+            </Link>
             <Link to="/pranata"> /&nbsp;Pranata Komputer</Link>
           </li>
         </ul>
@@ -113,6 +115,73 @@ export const Pranata = () => {
         <div className="structure-content-right">
           <div className="title-structure-content">
             <div>Pranata Komputer</div>
+          </div>
+          <div className="table-data-structure">
+            <table className="table table-structure">
+              <tbody>
+                <tr>
+                  <th>Jabatan</th>
+                  <td>&emsp;&emsp;:&emsp;Pranata Komputer</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Nama Pejabat</th>
+                  <td>&emsp;&emsp;:&emsp;-</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>NIP</th>
+                  <td>&emsp;&emsp;:&emsp;-</td>
+                  <td></td>
+                </tr>
+              </tbody>
+              <div className="btn-structure-staff">
+                <button className="btn " type="button">
+                  Detail Pegawai
+                </button>
+              </div>
+            </table>
+            <div className="content-structure-below-first">
+              <strong>&nbsp;- No Description</strong>
+            </div>
+            {/* <div className="content-structure-below-second">
+              <table>
+                <tbody>
+                  <div className="fill-head-structure">
+                    <tr>
+                      <td className="number-content align-top">1.</td>
+                      <td className="content-fill-structure">
+                        Menyelenggarakan pemerintahan desa
+                      </td>
+                    </tr>
+                  </div>
+                  <div className="fill-head-structure">
+                    <tr>
+                      <td className="number-content align-top">2.</td>
+                      <td className="content-fill-structure">
+                        Melaksanakan pembangunan desa
+                      </td>
+                    </tr>
+                  </div>
+                  <div className="fill-head-structure">
+                    <tr>
+                      <td className="number-content align-top">3.</td>
+                      <td className="content-fill-structure">
+                        Melaksanakan pembinaan masyarakat desa
+                      </td>
+                    </tr>
+                  </div>
+                  <div className="fill-head-structure">
+                    <tr>
+                      <td className="number-content align-top">4.</td>
+                      <td className="content-fill-structure">
+                        Memberdayakan masyarakat desa
+                      </td>
+                    </tr>
+                  </div>
+                </tbody>
+              </table>
+            </div> */}
           </div>
         </div>
       </div>

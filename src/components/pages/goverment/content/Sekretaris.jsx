@@ -121,7 +121,7 @@ export const Sekretaris = () => {
               <tbody>
                 <tr>
                   <th>Jabatan</th>
-                  <td>&emsp;&emsp;:&emsp;SEKRETARIS DESA</td>
+                  <td>&emsp;&emsp;:&emsp;Sekretaris Desa</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -151,7 +151,10 @@ export const Sekretaris = () => {
                     <tr>
                       <td className="number-content align-top">1.</td>
                       <td className="content-fill-structure">
-                        Menyelenggarakan pemerintahan desa
+                        Sekretaris desa/kelurahan berkedudukan sebagai unsur
+                        staff yang membantu kepala desa/lurah dalam melaksanakan
+                        tugas dan wewenangnya serta memimpin sekretariat
+                        desa/lurah.
                       </td>
                     </tr>
                   </div>
@@ -159,7 +162,39 @@ export const Sekretaris = () => {
                     <tr>
                       <td className="number-content align-top">2.</td>
                       <td className="content-fill-structure">
-                        Melaksanakan pembangunan desa
+                        Sekretaris desa/kelurahan mempunyai tugas menjalankan
+                        fungsi administrasi kelurahan, pembangunan dan
+                        kemasyarakatan.
+                      </td>
+                    </tr>
+                  </div>
+                </tbody>
+              </table>
+            </div>
+            <br />
+            <p>
+              Selain tugas tersebut di atas, seorang Sekretaris Desa harus mampu
+              menjalankan fungsi administrator dengan penuh tanggung jawab.
+              Berikut ini fungsi dari Sekdes, yaitu:
+            </p>
+            <br />
+            <div className="content-structure-below-second">
+              <table>
+                <tbody>
+                  <div className="fill-head-structure">
+                    <tr>
+                      <td className="number-content align-top">1.</td>
+                      <td className="content-fill-structure">
+                        Sebagai pelaksana urusan surat menyurat, kearsipan dan
+                        laporan.
+                      </td>
+                    </tr>
+                  </div>
+                  <div className="fill-head-structure">
+                    <tr>
+                      <td className="number-content align-top">2.</td>
+                      <td className="content-fill-structure">
+                        Sebagai pelaksana urusan keuangan.
                       </td>
                     </tr>
                   </div>
@@ -167,7 +202,46 @@ export const Sekretaris = () => {
                     <tr>
                       <td className="number-content align-top">3.</td>
                       <td className="content-fill-structure">
-                        Melaksanakan pembinaan masyarakat desa
+                        Sebagai pelaksana urusan administrasi pemerintahan,
+                        pembangunan, dan kemasyarakatan.
+                      </td>
+                    </tr>
+                  </div>
+                </tbody>
+              </table>
+            </div>
+            <br />
+            <p>
+              Dalam melaksanakan tugas dan fungsinya sekretaris desa/kelurahan
+              akan dibantu oleh Kepala Urusan. Merekalah yang menangani
+              pelayanan ketatausahaan yang baik guna membantu Sekdes,
+              diantaranya sebagai berikut:
+            </p>
+            <br />
+            <div className="content-structure-below-second">
+              <table>
+                <tbody>
+                  <div className="fill-head-structure">
+                    <tr>
+                      <td className="number-content align-top">1.</td>
+                      <td className="content-fill-structure">
+                        Kepala Urusan Pemerintahan
+                      </td>
+                    </tr>
+                  </div>
+                  <div className="fill-head-structure">
+                    <tr>
+                      <td className="number-content align-top">2.</td>
+                      <td className="content-fill-structure">
+                        Kepala Urusan Pembangunan.
+                      </td>
+                    </tr>
+                  </div>
+                  <div className="fill-head-structure">
+                    <tr>
+                      <td className="number-content align-top">3.</td>
+                      <td className="content-fill-structure">
+                        Kepala Urusan Keuangan
                       </td>
                     </tr>
                   </div>
@@ -175,17 +249,13 @@ export const Sekretaris = () => {
                     <tr>
                       <td className="number-content align-top">4.</td>
                       <td className="content-fill-structure">
-                        Memberdayakan masyarakat desa
+                        Kepala Urusan Umum
                       </td>
                     </tr>
                   </div>
                 </tbody>
               </table>
             </div>
-            <p>
-              Dengan tugas yang diberikan, Kepala Desa diharapkan bisa membawa
-              desa ke arah yang diharapkan oleh UU ini.
-            </p>
           </div>
         </div>
       </div>

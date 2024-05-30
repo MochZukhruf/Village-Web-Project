@@ -79,3 +79,25 @@
 .content-structure-below-second {
   padding-top: 1vh;
 }
+
+.card-perangkatdesa {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  width: 25%;
+  height: 100%;
+  border-color: black;
+}
+
+.card-perangkatdesa img {
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+}
+.card-perangkatdesa figure {
+  height: 30vh;
+}
+
+.card-prangkat {
+  height: 100%;
+  width: auto;
+}

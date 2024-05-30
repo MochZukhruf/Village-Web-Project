@@ -12,6 +12,7 @@ import { KKT } from './content/KKT'
 import { Pranata } from './content/Pranata'
 import { Sekretaris } from './content/Sekretaris'
 import { Kaurpemberdaya } from './content/Kaurpemberdaya'
+import { Perangkatdesa } from './perangkatdesa/Perangkatdesa'
 
 const Structureroute = () => {
   return (
@@ -28,6 +29,7 @@ const Structureroute = () => {
         <Route path='pranata' element={<Pranata/>}/>
         <Route path='sekretaris' element={<Sekretaris/>}/>
         <Route path='kaurpm' element={<Kaurpemberdaya/>}/>
+        <Route path='perangkatdesa' element={<Perangkatdesa/>}/>
     </Routes>
   )
 }

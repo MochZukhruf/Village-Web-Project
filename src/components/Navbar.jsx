@@ -158,7 +158,9 @@ export const Navbar = () => {
                       </Link>
                     </li>
                     <li>
-                      <a>Link 2</a>
+                      <Link to="/perangkatdesa" onClick={handleLinkClick}>
+                        Perangkat Desa
+                      </Link>
                     </li>
                   </ul>
                 </details>
