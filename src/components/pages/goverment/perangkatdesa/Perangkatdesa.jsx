@@ -26,14 +26,16 @@ export const Perangkatdesa = () => {
         </ul>
       </div>
       <div className="card-perangkatdesa">
-        <div class="card w-96 glass card-prangkat ">
+        <div class="card w-96 glass card-prangkat">
           <figure>
-            <img src="img/structure/profile.jpg" alt="car!" />
+            <img src="img/structure/profile.jpg" alt="Profile Image" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Kepala Desa</h2>
-            <p>Kades Kotanagaya</p>
-            <div class="card-actions justify-end">
+            <div className="card-title-structur">
+              <h2>Kepala Desa</h2>
+              <p>Kades Kotanagaya</p>
+            </div>
+            <div class="card-actions">
               <button class="btn btn-primary">More</button>
             </div>
           </div>

@@ -85,19 +85,64 @@
   padding-bottom: 5vh;
   width: 25%;
   height: 100%;
-  border-color: black;
 }
 
 .card-perangkatdesa img {
   width: 100%;
-  height: fit-content;
-  align-items: center;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  border-radius: 6px 6px 0 0;
 }
+
 .card-perangkatdesa figure {
   height: 30vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
 }
 
 .card-prangkat {
   height: 100%;
   width: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card-title-structur {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-title-structur h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-title-structur p {
+  margin: 0;
+  color: #777;
+  font-size: 1rem;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.card-actions .btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 1vh;
 }
