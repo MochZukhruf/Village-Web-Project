@@ -4,7 +4,7 @@ import "../../../../styles/goverment.css";
 
 export const BMD = () => {
   return (
-    <div className="mx-96">
+    <div className="mx-96 structure-content-all">
       <div className="text-sm breadcrumbs">
         <ul>
           <li>
@@ -19,7 +19,10 @@ export const BMD = () => {
             </div>
           </li>
           <li>
-            <Link to="/structure">Struktur Organisasi</Link>
+            <Link className="link-next" to="/structure">
+              Struktur Organisasi &nbsp;
+            </Link>
+            <Link to="/bmd">/&nbsp; Badan Musyawarah Desa</Link>
           </li>
         </ul>
       </div>
@@ -111,7 +114,7 @@ export const BMD = () => {
           </div>
         </div>
         <div className="structure-content-right">
-          <div className="">
+          <div className="title-structure-content">
             <div>Badan Musyawarah Desa</div>
           </div>
         </div>

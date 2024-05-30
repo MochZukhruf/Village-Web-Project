@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../../../../styles/goverment.css";
 export const Kepaladesa = () => {
   return (
-    <div className="mx-96">
+    <div className="mx-96 structure-content-all">
       <div className="text-sm breadcrumbs">
         <ul>
           <li>
@@ -18,7 +18,10 @@ export const Kepaladesa = () => {
             </div>
           </li>
           <li>
-            <Link to="/structure">Struktur Organisasi</Link>
+            <Link className="link-next" to="/structure">
+              Struktur Organisasi &nbsp;
+            </Link>
+            <Link to="/kepaladesa">/&nbsp;Kepala Desa</Link>
           </li>
         </ul>
       </div>
@@ -110,8 +113,82 @@ export const Kepaladesa = () => {
           </div>
         </div>
         <div className="structure-content-right">
-          <div className="">
+          <div className="title-structure-content">
             <div>Kepala Desa</div>
+          </div>
+          <div className="table-data-structure">
+            <table className="table table-structure">
+              <tbody>
+                <tr>
+                  <th>Jabatan</th>
+                  <td>&emsp;&emsp;:&emsp;Kepala Desa</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Nama Pejabat</th>
+                  <td>&emsp;&emsp;:&emsp;Kades Kotanagaya</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>NIP</th>
+                  <td>&emsp;&emsp;:&emsp;-</td>
+                  <td></td>
+                </tr>
+              </tbody>
+              <div className="btn-structure-staff">
+                <button className="btn " type="button">
+                  Detail Pegawai
+                </button>
+              </div>
+            </table>
+            <div className="content-structure-below-first">
+              <p>
+                Secara eksplisit Pasal 26 ayat (1) mengatur empat tugas utama
+                Kepala Desa yaitu:
+              </p>
+            </div>
+            <div className="content-structure-below-second">
+              <table>
+                <tbody>
+                  <div className="fill-head-structure">
+                    <tr>
+                      <td className="number-content align-top">1.</td>
+                      <td className="content-fill-structure">
+                        Menyelenggarakan pemerintahan desa
+                      </td>
+                    </tr>
+                  </div>
+                  <div className="fill-head-structure">
+                    <tr>
+                      <td className="number-content align-top">2.</td>
+                      <td className="content-fill-structure">
+                        Melaksanakan pembangunan desa
+                      </td>
+                    </tr>
+                  </div>
+                  <div className="fill-head-structure">
+                    <tr>
+                      <td className="number-content align-top">3.</td>
+                      <td className="content-fill-structure">
+                        Melaksanakan pembinaan masyarakat desa
+                      </td>
+                    </tr>
+                  </div>
+                  <div className="fill-head-structure">
+                    <tr>
+                      <td className="number-content align-top">4.</td>
+                      <td className="content-fill-structure">
+                        Memberdayakan masyarakat desa
+                      </td>
+                    </tr>
+                  </div>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              Dengan tugas yang diberikan, Kepala Desa diharapkan bisa membawa
+              desa ke arah yang diharapkan oleh UU ini.
+            </p>
           </div>
         </div>
       </div>

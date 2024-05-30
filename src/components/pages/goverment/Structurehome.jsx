@@ -4,7 +4,7 @@ import "../../../styles/goverment.css";
 
 export const Structurehome = () => {
   return (
-    <div className="mx-96">
+    <div className="mx-96 structure-content-all">
       <div className="text-sm breadcrumbs">
         <ul>
           <li>
@@ -111,8 +111,11 @@ export const Structurehome = () => {
           </div>
         </div>
         <div className="structure-content-right">
-          <div className="">
+          <div className="title-structure-content">
             <div>Struktur Organisasi</div>
+          </div>
+          <div className="img-structure">
+            <img src="/img/structure/struktur_org_desa.png" alt="" />
           </div>
         </div>
       </div>

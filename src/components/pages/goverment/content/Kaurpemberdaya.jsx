@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../../../../styles/goverment.css";
 export const Kaurpemberdaya = () => {
   return (
-    <div className="mx-96">
+    <div className="mx-96 structure-content-all ">
       <div className="text-sm breadcrumbs">
         <ul>
           <li>
@@ -18,7 +18,8 @@ export const Kaurpemberdaya = () => {
             </div>
           </li>
           <li>
-            <Link to="/structure">Struktur Organisasi</Link>
+            <Link className="link-next" to="/structure">Struktur Organisasi&nbsp; </Link>
+            <Link to="/kaurpemberdaya">/&nbsp;Kaur Pemberdayaan Masyarakat</Link>
           </li>
         </ul>
       </div>
@@ -110,7 +111,7 @@ export const Kaurpemberdaya = () => {
           </div>
         </div>
         <div className="structure-content-right">
-          <div className="">
+          <div className="title-structure-content">
             <div>Kaur Pemberdaya Masyarakat</div>
           </div>
         </div>

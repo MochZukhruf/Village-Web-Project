@@ -58,16 +58,23 @@ export const Navbar = () => {
     setOpenDropdown(null);
   };
 
-  const handleDropdownClick = (index) => {
+  const handleDropdownClick = (index, event) => {
+    event.preventDefault();
+    event.stopPropagation();
     const detailsElements = document.querySelectorAll("details");
 
-    detailsElements.forEach((details, idx) => {
-      if (idx !== index) {
-        details.removeAttribute("open");
-      }
-    });
-
-    setOpenDropdown(openDropdown === index ? null : index);
+    if (openDropdown === index) {
+      detailsElements[index].removeAttribute("open");
+      setOpenDropdown(null);
+    } else {
+      detailsElements.forEach((details, idx) => {
+        if (idx !== index) {
+          details.removeAttribute("open");
+        }
+      });
+      detailsElements[index].setAttribute("open", "true");
+      setOpenDropdown(index);
+    }
   };
 
   const handleNavbarClick = () => {
@@ -80,7 +87,7 @@ export const Navbar = () => {
   return (
     <div
       ref={navbarRef}
-      className={`navbar-container ${isTransparent ? "transparent" : "solid"}`}
+      className={`navbar-container ${isTransparent ? "transparent" : ""}`}
       onClick={handleNavbarClick}
     >
       <div className="mx-96">
@@ -104,7 +111,10 @@ export const Navbar = () => {
           <div className="flex-none">
             <ul className="menu menu-horizontal px-1">
               <li>
-                <details onClick={() => handleDropdownClick(0)}>
+                <details
+                  onClick={(event) => handleDropdownClick(0, event)}
+                  open={openDropdown === 0}
+                >
                   <summary className="dropdown-title">Profil</summary>
                   <ul className="dropdown-header">
                     <li>
@@ -136,7 +146,10 @@ export const Navbar = () => {
                 </details>
               </li>
               <li>
-                <details onClick={() => handleDropdownClick(1)}>
+                <details
+                  onClick={(event) => handleDropdownClick(1, event)}
+                  open={openDropdown === 1}
+                >
                   <summary className="dropdown-title">Pemerintahan</summary>
                   <ul className="dropdown-header">
                     <li>
@@ -151,7 +164,10 @@ export const Navbar = () => {
                 </details>
               </li>
               <li>
-                <details onClick={() => handleDropdownClick(2)}>
+                <details
+                  onClick={(event) => handleDropdownClick(2, event)}
+                  open={openDropdown === 2}
+                >
                   <summary className="dropdown-title">
                     Public Information
                   </summary>
