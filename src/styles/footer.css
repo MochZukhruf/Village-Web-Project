@@ -1,5 +1,5 @@
 .body-footer {
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(65, 65, 65);
 }
 
 .content-body-footer {
@@ -38,5 +38,14 @@ iframe {
 
 .info-table {
   margin: auto;
+  text-align: left;
+}
+
+.footer-all {
+  background-color: rgb(65, 65, 65);
+  display: flex;
+}
+.footer-content {
+  height: auto;
   text-align: left;
 }

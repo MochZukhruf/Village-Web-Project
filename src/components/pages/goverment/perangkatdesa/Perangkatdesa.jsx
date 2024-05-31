@@ -25,19 +25,43 @@ export const Perangkatdesa = () => {
           </li>
         </ul>
       </div>
-      <div className="card-perangkatdesa">
-        <div class="card w-96 glass card-prangkat">
-          <figure>
-            <img src="img/structure/profile.jpg" alt="Profile Image" />
-          </figure>
-          <div class="card-body">
-            <div className="card-title-structur">
-              <h2>Kepala Desa</h2>
-              <p>Kades Kotanagaya</p>
-            </div>
-            <div class="card-actions">
-              <button class="btn btn-primary">More</button>
-            </div>
+      <div>
+        <div className="card-perangkatdesa">
+          <div class="card w-96 glass card-prangkat">
+            {/* <table> */}
+            <td>
+              <figure>
+                <img src="img/structure/profile.jpg" alt="Profile Image" />
+              </figure>
+              <div class="card-body">
+                <div className="card-title-structur">
+                  <h2>Kepala Desa</h2>
+                  <p>Kades Kotanagaya</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn btn-primary">More</button>
+                </div>
+              </div>
+            </td>
+          </div>
+          <div class="card w-96 glass card-prangkat">
+            <td>
+              <figure>
+                <img src="img/structure/images1.jpg" alt="Profile Image" />
+              </figure>
+              <div class="card-body">
+                <div className="card-title-structur">
+                  <h2>Kepala Desa</h2>
+                  <p>Kades Kotanagaya</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn btn-primary">
+                    <Link to={"/profilstaff"}>More</Link>
+                  </button>
+                </div>
+              </div>
+            </td>
+            {/* </table> */}
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ export const Media = () => {
             <p className="left-title">Media</p>
             <div className="overflow-x-auto">
               <div className="media-table">
-                <table className="table">
+                <table className="table media-table">
                   <tbody>
                     {/* row */}
                     <tr>
