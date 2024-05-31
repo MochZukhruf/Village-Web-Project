@@ -170,15 +170,13 @@ export const Navbar = () => {
                   onClick={(event) => handleDropdownClick(2, event)}
                   open={openDropdown === 2}
                 >
-                  <summary className="dropdown-title">
-                    Public Information
-                  </summary>
+                  <summary className="dropdown-title">Informasi Publik</summary>
                   <ul className="dropdown-header">
                     <li>
-                      <a>Link 1</a>
+                      <Link to={"/news"}>Berita Desa</Link>
                     </li>
                     <li>
-                      <a>Link 2</a>
+                      <a>Pengumuman</a>
                     </li>
                   </ul>
                 </details>

@@ -75,13 +75,13 @@ export const Profilstaff = () => {
                       <a>Sekretaris</a>
                     </li>
                     <li>
-                      <a>Item 2</a>
+                      <a>Kaur Pemerintahan</a>
                     </li>
                     <li>
-                      <a>Item 3</a>
+                      <a>Kaur Pembangunan</a>
                     </li>
                     <li>
-                      <a>Item 4</a>
+                      <a>Kesejahteraan Rakyat</a>
                     </li>
                   </ul>
                 </li>

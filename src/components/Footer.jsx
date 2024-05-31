@@ -18,7 +18,7 @@ export const Footer = () => {
             </p>
             <Link to="/about">Selengkapnya &#10140;</Link>
           </nav>
-          <nav className="footer-content">
+          <nav className="footer-content-center">
             <h6 className="footer-title">Tentang</h6>
             <td>
               <ul className="custom-bullets">
@@ -46,7 +46,9 @@ export const Footer = () => {
               Sulawesi Tengah 94479
             </p>
             <br />
-            <p className="fa fa-phone"></p>
+            <div>
+              <p>Kotanagaya@gmail.com</p>
+            </div>
           </nav>
         </footer>
       </div>

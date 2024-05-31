@@ -49,3 +49,9 @@ iframe {
   height: auto;
   text-align: left;
 }
+.footer-content-center {
+  height: auto;
+  text-align: left;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
