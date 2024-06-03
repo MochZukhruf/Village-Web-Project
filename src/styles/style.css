@@ -485,6 +485,16 @@
   border-radius: 1vh;
 }
 
+.bio-profile {
+  margin-left: 2vh;
+  width: 60%;
+  text-align: left;
+}
+
+.bio-profile .content-fill {
+  text-align: justify;
+}
+
 .card-content-staff {
   display: flex;
   margin: 1vh;
