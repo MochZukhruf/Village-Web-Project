@@ -54,7 +54,7 @@
   flex-wrap: wrap; /* This allows the buttons to wrap to the next line if needed */
 }
 
-.join {
+.join-hero {
   display: flex;
   flex-direction: column; /* Stack the button and text vertically */
   align-items: center; /* Center the button and text horizontally */

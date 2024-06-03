@@ -175,9 +175,6 @@ export const Navbar = () => {
                     <li>
                       <Link to={"/news"}>Berita Desa</Link>
                     </li>
-                    <li>
-                      <a>Pengumuman</a>
-                    </li>
                   </ul>
                 </details>
               </li>

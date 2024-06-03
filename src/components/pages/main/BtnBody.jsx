@@ -7,7 +7,7 @@ export const BtnBody = () => {
       <div className="hero-btn mx-96">
         <div className="btn-body">
           <div>
-            <div className="join">
+            <div className="join-hero">
               <button className="btn join-item circle-btn">
                 <img
                   src="/img/icon/group.png"
@@ -19,7 +19,7 @@ export const BtnBody = () => {
             <p className="button-text">People</p>
           </div>
           <div>
-            <div className="join">
+            <div className="join-hero">
               <button className="btn join-item circle-btn">
                 <img
                   src="/img/icon/approved.png"
@@ -31,7 +31,7 @@ export const BtnBody = () => {
             <p className="button-text">Services</p>
           </div>
           <div>
-            <div className="join">
+            <div className="join-hero">
               <button className="btn join-item circle-btn">
                 <img
                   src="/img/icon/reduction.png"
@@ -43,7 +43,7 @@ export const BtnBody = () => {
             <p className="button-text">Status</p>
           </div>
           <div>
-            <div className="join">
+            <div className="join-hero">
               <button className="btn join-item circle-btn">
                 <img
                   src="/img/icon/dollar.png"
