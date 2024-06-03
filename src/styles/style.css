@@ -1,0 +1,739 @@
+/* Navbar */
+.navbar-container {
+  position: sticky; /* For sticky positioning */
+  transition: background-color 0.3s ease;
+  top: 0;
+  z-index: 1000; /* Ensure it is above other content */
+  background-color: rgba(
+    235,
+    235,
+    235,
+    0.644
+  ); /* Initial transparent background */
+}
+
+.div-img-logo {
+  padding-right: 1vh;
+}
+
+.logo-img {
+  height: auto;
+  width: 3vh;
+}
+
+.navbar-container.transparent {
+  background-color: rgba(235, 235, 235, 0.644); /* Transparent background */
+}
+
+.navbar-container.solid {
+  background-color: rgb(235, 235, 235); /* Solid background */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent; /* Keep the navbar itself transparent */
+  width: 100%; /* Ensure it covers the full width */
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.btn-ghost {
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  color: #535353;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.text-xl {
+  font-size: 1.25rem; /* Adjust the size as needed */
+}
+
+.flex-none {
+  display: flex;
+}
+
+.menu-horizontal {
+  display: flex;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.menu-horizontal > li {
+  position: relative; /* Needed for positioning the dropdown */
+  margin: 0 0.5rem; /* Adjust the margin as needed */
+}
+
+.menu-horizontal > li > details > ul {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid #cccccc67;
+  border-radius: 0.25rem;
+  z-index: 50;
+  min-width: 200px;
+  padding: 0.5rem 0;
+  display: none; /* Hide by default */
+}
+
+.menu-horizontal > li > details[open] > ul {
+  display: block; /* Show when open */
+}
+
+.dropdown-title {
+  font-weight: bold;
+  color: #535353;
+}
+
+.dropdown-header > li > a {
+  padding: 0.5rem 1rem;
+  display: block;
+  color: #575757;
+  text-decoration: none;
+}
+
+.dropdown-header > li > a:hover {
+  background-color: #a1a1a1;
+  color: white; /* Change text color on hover */
+  align-items: center;
+}
+
+.dropdown-header > li {
+  padding-left: 1vh;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .flex-1 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .menu-horizontal {
+    flex-direction: column;
+  }
+
+  .menu-horizontal > li {
+    margin: 0.5rem 0;
+  }
+
+  .menu-horizontal > li > details > ul {
+    position: static;
+    transform: none;
+  }
+}
+
+.content-vision {
+  margin-bottom: 5vh;
+}
+
+/* hero */
+
+.carousel {
+  border-radius: 10px;
+  height: 100%;
+}
+
+.background-media {
+  background-color: rgb(233, 233, 233);
+  margin-top: 5%;
+}
+
+.media-table {
+  background-color: rgb(202, 202, 202);
+  border-radius: 1vh;
+}
+
+.carousel-item {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-layer {
+  position: relative;
+  background-color: rgb(223, 223, 223);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 50vh; /* Mengisi seluruh lebar dan tinggi carousel item */
+  object-fit: cover; /* Memastikan gambar dipertahankan proporsional dan terisi penuh */
+}
+
+.btn-background-all {
+  background-color: rgb(236, 236, 236);
+}
+
+.carousel-item.active {
+  opacity: 1;
+  position: relative;
+}
+
+.hero-btn {
+  padding: 10px;
+}
+
+.btn-body {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* This allows the buttons to wrap to the next line if needed */
+}
+
+.join-hero {
+  display: flex;
+  flex-direction: column; /* Stack the button and text vertically */
+  align-items: center; /* Center the button and text horizontally */
+}
+
+.btn-arrow {
+  border-radius: 50%;
+  background-color: rgba(204, 204, 204, 0.39);
+}
+
+/* Make the buttons circular */
+.circle-btn {
+  width: 90px; /* Adjust size as needed */
+  height: 90px; /* Adjust size as needed */
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.219);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px; /* Add margin to create space between buttons */
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    /* Adjust styles for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    /* Further adjustments for even smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    /* Atur ulang untuk tampilan layar yang lebih kecil jika diperlukan */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    /* Lebih lanjut atur ulang untuk tampilan layar yang lebih kecil */
+  }
+}
+
+/* Media */
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.table-media {
+  width: 100%;
+  height: 400px;
+  margin-top: 5vh;
+}
+.table-media p {
+  margin-bottom: 5vh;
+}
+
+.card-pic {
+  width: 50%;
+}
+
+.left-title {
+  padding-top: 5%;
+}
+
+/* Body */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.right-content {
+  margin: 10px;
+}
+.left-content {
+  margin: 10px;
+  position: relative;
+}
+
+.card-figure img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-body {
+  overflow-y: auto;
+  width: 100%;
+}
+
+.card {
+  width: 100%; /* Set the desired width */
+  height: 250px; /* Set the desired height */
+}
+
+.date-content {
+  text-align: start;
+}
+
+.recent-news {
+  margin-bottom: 20px;
+}
+
+.announcement {
+  margin-bottom: 20px;
+}
+
+.collapse {
+  width: 420px;
+  margin: 5%;
+}
+
+.btn-box {
+  border-radius: 10px;
+  width: 15%;
+  height: 150%;
+  background-color: rgb(129, 129, 129);
+}
+
+/* Goverment */
+.structure-content {
+  display: flex;
+}
+
+.structure-content-left {
+  text-align: left;
+  width: 25%;
+}
+
+.btn-left {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 0.125vh solid rgba(124, 124, 124, 0.096);
+}
+
+.link-next {
+  color: rgb(76, 123, 253);
+}
+
+.btn-fill-left {
+  display: flex;
+  padding-top: 0.75vh;
+  width: 100%;
+}
+
+.img-structure {
+  width: 100%;
+  height: auto;
+  align-items: flex-end;
+}
+
+.btn-fill-left span {
+  padding-right: 1vh;
+}
+
+.structure-content-right {
+  padding-left: 1vh;
+  text-align: left;
+  width: 80%;
+  flex-direction: column;
+}
+
+.title-structure-content {
+  margin-top: 1vh;
+  font-size: 3vh;
+  margin-bottom: 1vh;
+  font-weight: bold;
+}
+
+.structure-content-all {
+  padding-bottom: 1vh;
+  background-color: rgba(255, 255, 255, 0.39);
+  border-radius: 1vh;
+}
+
+.table-structure {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.btn-structure-staff {
+  height: 100%;
+  width: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.table-structure th,
+.table-structure td {
+  text-align: left; /* Align text to the left */
+  padding: 8px; /* Add padding for better readability */
+  border-bottom: 1px solid #ddd; /* Optional: Add a bottom border for rows */
+}
+
+.table-structure th {
+  width: 150px; /* Adjust the width of the first column as needed */
+}
+
+.content-structure-below-second {
+  padding-top: 1vh;
+}
+
+.card-perangkatdesa {
+  padding-top: 5vh;
+  display: flex;
+  padding-bottom: 5vh;
+  width: auto;
+  height: 100%;
+}
+
+.card-perangkatdesa img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  border-radius: 2vh 2vh 0 0;
+}
+
+.card-perangkatdesa figure {
+  height: 30vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 2vh 2vh 0 0;
+}
+
+.card-prangkat {
+  height: 100%;
+  width: 25%;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  border-radius: 2vh;
+  box-shadow: 0 4vh 8vh rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card-title-structur {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-title-structur h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-title-structur p {
+  margin: 0;
+  color: #777;
+  font-size: 1rem;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.card-actions .btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 1vh;
+}
+
+.card-content-staff {
+  display: flex;
+  margin: 1vh;
+}
+.card-content-staff {
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.avatar .rounded-xl {
+  overflow: hidden;
+  border: 0.25rem solid #e5e7eb; /* Tailwind gray-200 */
+}
+
+.avatar img {
+  width: 8rem; /* 32px */
+  height: 8rem; /* 32px */
+  object-cover: cover;
+}
+
+.text-center h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.text-center p {
+  color: #4b5563;
+}
+
+.table-profile-staff {
+  margin-left: 2vh;
+  border: #1f2937;
+}
+
+.profile-staff-content {
+  display: flex;
+}
+.profile-staff-box-left {
+  width: 100%;
+  height: 60vh;
+}
+.content-profile-staff-right {
+  margin-right: 1vh;
+}
+
+/* News */
+.content-news {
+  margin-bottom: 2vh;
+  display: flex;
+}
+.content-news-right {
+  margin-left: 2vh;
+  display: flex;
+}
+
+.form-control {
+  width: 30vh;
+}
+
+.card-left img {
+  border-radius: 2vh;
+  width: 80%;
+}
+
+.join-pagination input {
+  margin-right: 1vh;
+  margin-bottom: 2vh;
+}
+
+.join-pagination input:last-child {
+  margin-right: 0;
+}
+
+.content-news-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Jarak antara search dan kategori */
+}
+
+.content-news-category {
+  margin-top: 1vh;
+  width: 100%;
+  height: auto;
+}
+
+.title-structure-content {
+  text-align: left;
+}
+
+.news-content-card {
+  flex-direction: column;
+}
+
+.news-card {
+  padding-bottom: 2vh;
+}
+
+/* Profile Staff */
+.home-icon {
+  width: 1rem;
+}
+
+.breadcrumbs {
+  background-color: rgb(230, 230, 230);
+  margin-top: 1%;
+  border-radius: 1vh;
+  margin-bottom: 1%;
+}
+
+.img-icon {
+  margin-left: 1vh;
+}
+
+.content-about {
+  text-align: justify;
+}
+
+.header-content {
+  margin-top: 1vh;
+  font-size: 2.5vh;
+  margin-bottom: 1vh;
+  font-weight: bold;
+}
+.content-title {
+  margin-top: 1vh;
+  font-size: 2vh;
+  margin-bottom: 1vh;
+  font-weight: bold;
+}
+
+.content-fill {
+  margin-bottom: 2vh;
+  text-align: start;
+}
+
+.fill-head {
+  margin-bottom: 1vh;
+}
+
+.content-sub-title {
+  text-align: left;
+  margin-top: 1vh;
+}
+
+ul {
+  list-style-type: disc; /* tipe bullets, bisa diubah menjadi circle, square, dll */
+}
+
+ul.custom-bullets {
+  margin-left: 2vh;
+  list-style-type: disc; /* contoh custom style */
+}
+
+.footer-about {
+  font-size: 2vh;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+
+.content-history {
+  text-align: justify;
+}
+
+.content-vision {
+  text-align: justify;
+}
+.content-geography {
+  text-align: justify;
+  margin-bottom: 5vh;
+}
+
+.br-geo {
+  margin-bottom: 10%;
+}
+.br-demo {
+  margin-bottom: 30%;
+}
+
+.content-demography {
+  text-align: justify;
+  margin-bottom: 5vh;
+}
+
+/* Footer */
+.body-footer {
+  background-color: rgb(65, 65, 65);
+}
+
+.content-body-footer {
+  color: rgb(255, 255, 255);
+  font-size: 24pt;
+}
+
+.map-and-table {
+  display: flex;
+  align-items: self-start; /* Aligns items to the top */
+}
+
+/* footer.css */
+.body-footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.content-body-footer i {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.maps {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+iframe {
+  width: 70%;
+  max-width: 100%;
+  height: 350px;
+  border: 0;
+}
+
+.info-table {
+  margin: auto;
+  text-align: left;
+}
+
+.footer-all {
+  background-color: rgb(65, 65, 65);
+  display: flex;
+}
+.footer-content {
+  height: auto;
+  text-align: left;
+}
+.footer-content-center {
+  height: auto;
+  text-align: left;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}

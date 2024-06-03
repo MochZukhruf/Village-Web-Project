@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../../../styles/goverment.css";
+import "../../../../styles/style.css";
 
 export const BMD = () => {
   return (

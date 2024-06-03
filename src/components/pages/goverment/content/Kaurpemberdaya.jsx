@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../../../styles/goverment.css";
+import "../../../../styles/style.css";
 export const Kaurpemberdaya = () => {
   return (
     <div className="mx-96 structure-content-all ">

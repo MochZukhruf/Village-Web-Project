@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../styles/media.css";
+import "../../../styles/style.css";
 
 export const Media = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../../styles/news.css";
+import "../../../styles/style.css";
 
 export const News = () => {
   return (
@@ -23,22 +23,47 @@ export const News = () => {
           </li>
         </ul>
       </div>
+      <div className="title-structure-content">
+        <div>Berita Desa</div>
+      </div>
       <div className="content-news">
-        <div className="card card-left lg:card-side ">
-          <figure>
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-              alt="Album"
-            />
-          </figure>
-          <div class="card-body text-left">
-            <h2 class="card-title">New album is released!</h2>
-            <p>Click the button to listen on the Spotiwhy app.</p>
-            <div class="card-action-news">
-              <button class="btn btn-primary">Listen</button>
+        <div className="news-content-card">
+          <div className="news-card">
+            <div className="card card-left lg:card-side bg-base-100 shadow-xl ">
+              <figure>
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
+                  alt="Album"
+                />
+              </figure>
+              <div class="card-body text-left ">
+                <h2 class="card-title">New album is released!</h2>
+                <p>Click the button to listen on the Spotiwhy app.</p>
+                <div class="card-action-news">
+                  <button class="btn btn-primary ">Listen</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="news-card">
+            <div className="card card-left lg:card-side bg-base-100 shadow-xl ">
+              <figure>
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
+                  alt="Album"
+                />
+              </figure>
+              <div class="card-body text-left ">
+                <h2 class="card-title">New album is released!</h2>
+                <p>Click the button to listen on the Spotiwhy app.</p>
+                <div class="card-action-news">
+                  <button class="btn btn-primary ">Listen</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
         <div className="content-news-right">
           <div className="form-control">
             <input

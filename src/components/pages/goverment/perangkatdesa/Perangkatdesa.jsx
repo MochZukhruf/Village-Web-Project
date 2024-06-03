@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../../styles/goverment.css";
+import "../../../../styles/style.css";
 import { Link } from "react-router-dom";
 
 export const Perangkatdesa = () => {

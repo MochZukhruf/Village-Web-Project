@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../styles/navbar.css";
+import "../styles/style.css";
 
 export const Navbar = () => {
   const [scrollY, setScrollY] = useState(0);
