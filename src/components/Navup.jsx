@@ -13,7 +13,10 @@ export const Navup = () => {
               <IoMailOutline /> <span>&nbsp;Kotanagaya@gmail.com</span>
             </div>
             <div className="text-right">
-              <FaEarthAsia /> <span>&nbsp;Kabupaten Parigi Moutong</span>
+              <FaEarthAsia /> &nbsp;
+              <a href="https://maps.app.goo.gl/n5TMnGeGcYdRxGWH8">
+                Kabupaten Parigi Moutong
+              </a>
             </div>
           </div>
         </div>
