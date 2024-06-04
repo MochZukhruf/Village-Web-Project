@@ -1,6 +1,4 @@
 import React from "react";
-import { FaPhone, FaEarthAsia } from "react-icons/fa6";
-import { IoMailOutline } from "react-icons/io5";
 
 export const Footerdown = () => {
   return (
