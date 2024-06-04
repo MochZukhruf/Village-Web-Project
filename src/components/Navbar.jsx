@@ -85,12 +85,14 @@ export const Navbar = () => {
   };
 
   return (
+    
     <div
       ref={navbarRef}
       className={`navbar-container ${isTransparent ? "transparent" : ""}`}
       onClick={handleNavbarClick}
     >
       <div className="mx-96">
+        
         <div className="navbar">
           <div className="flex-1">
             <Link

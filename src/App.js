@@ -10,6 +10,8 @@ import { Vision } from './components/pages/profile/Vision';
 import { Geography } from './components/pages/profile/Geography';
 import { Demography } from './components/pages/profile/Demography';
 import Structureroute from './components/pages/goverment/Structureroute';
+import { Navup } from './components/Navup';
+import { Footerdown } from './components/Footerdown';
 
 
 function App() {
@@ -17,7 +19,7 @@ function App() {
     <><Router>
 
     <div className="App">
-      
+      <Navup/>
       <Navbar/>
       <Structureroute/>
         
@@ -33,6 +35,7 @@ function App() {
         
       </Routes>
       <Footer/>
+      <Footerdown/>
     </div>
 
     </Router></>
